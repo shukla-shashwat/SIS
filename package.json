@@ -1,0 +1,28 @@
+{
+  "name": "smart-interview-simulator",
+  "version": "1.0.0",
+  "description": "A web platform that simulates real technical and behavioral interviews",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "interview",
+    "simulator",
+    "practice",
+    "technical-interview"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}
